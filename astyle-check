@@ -1,0 +1,8 @@
+from subprocess import run, DEVNULL
+from sys import argv
+from os.path import exists
+
+if exists('.astylerc'):
+	run(['astyle', '--project=.astylerc'] + argv[1:], stdin=DEVNULL)
+else:
+	run(['astyle'] + argv[1:], stdin=DEVNULL)
