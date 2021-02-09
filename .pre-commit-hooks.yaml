@@ -3,4 +3,4 @@
     description: Run `astyle` on your code. Uses local `.astylerc` if it exists.
     entry: astyle-check
     language: python
-    types_or: ['c', 'h']
+    types: ['text', 'c']
